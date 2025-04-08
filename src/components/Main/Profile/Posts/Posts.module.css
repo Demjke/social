@@ -1,0 +1,56 @@
+.posts {
+    margin-top: 20px;
+}
+.title {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 100;
+}
+.form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.field {
+    height: 70px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 100;
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.field::placeholder {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 100;
+    color: #000;
+}
+.btn {
+    max-width: max-content;
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: blue;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.btn:hover {
+    background: blue;
+    cursor: pointer;
+    color: #fff;
+}
+.list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}

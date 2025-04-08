@@ -1,0 +1,81 @@
+.dialogs {
+    height: 100%;
+}
+.dialogs-wrapper {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 10px;
+}
+.title {
+    text-align: center;
+}
+.dialogs-items {
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dialog a {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000;
+    cursor: pointer;
+}
+.dialog a.active {
+    color: coral;
+}
+.dialogs-messages {
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.message {
+    border: 1px solid #000;
+    padding: 10px;
+}
+.form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.field {
+    height: 70px;
+    border: 1px solid #000;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 100;
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    resize: none;
+}
+.field::placeholder {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 100;
+    color: #000;
+}
+.btn {
+    max-width: max-content;
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: blue;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.btn:hover {
+    background: blue;
+    cursor: pointer;
+    color: #fff;
+}

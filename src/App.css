@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+    margin: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: initial;
+    display: flex;
+}
+.app-wrapper {
+    background: url("./images/bg/bg.jpg") repeat center top;
+    padding: 10px;
+    min-height: 101vh;
+}
+.app-wrapper__container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "h h h"
+        "n m m";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    gap: 10px;
+}
+.main {
+    grid-area: m;
+    background: lightcoral;
+    padding: 10px;
+}

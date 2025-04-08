@@ -1,0 +1,55 @@
+.header {
+    grid-area: h;
+    background: blue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+}
+.logo img {
+    max-width: 100%;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.phone,
+.mail {
+    padding-left: 25px;
+    position: relative;
+    font-weight: 500;
+    color: #fff !important;
+    transition: all 0.3s;
+}
+.phone::before,
+.mail::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.phone::before {
+    background: url("../../images/header/phone.svg");
+}
+.mail::before {
+    background: url("../../images/header/mail.svg");
+}
+.phone:hover,
+.mail:hover {
+    color: violet !important;
+}
+.login {
+}
+.login-link {
+    color: #fff;
+    text-transform: uppercase;
+}
